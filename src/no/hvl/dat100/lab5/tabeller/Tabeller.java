@@ -5,12 +5,18 @@ public class Tabeller {
 	public static void main(String[] args) {
 		
 		int[] heltall = {10, 20, 30, 40};
-		String [] stringTekst = {"[42, 67, 89]"};
+		int[] stringTekst = {42, 67, 89};
+		int[] tab1 = {1,2,3};
+		int[] tab2 = {4,5,6};
+		
+		
 		
 		skrivUt(heltall);
 		summer (heltall);
 		reverser(heltall);
-		
+		tilStreng(stringTekst);
+		posisjonTall(heltall, 40);
+		settSammen(tab1,tab2);
 		}
 	
 	
@@ -29,6 +35,19 @@ public class Tabeller {
 
 	// b)
 	public static String tilStreng(int[] tabell) {
+		
+		String start = "[";
+		String slutt = "]";
+		
+		for (int i = 0; i < tabell.length; i++) {
+			start += tabell[i];
+			if (tabell.length > i + 1) {
+				start += ",";
+			}
+		}
+		System.out.println(start + slutt);
+		
+		return start + slutt;
 		
 		
 		
@@ -70,14 +89,24 @@ public class Tabeller {
 
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
-
+		return false;
 //		// TODO
 //		throw new UnsupportedOperationException("finnesTall ikke implementert");
 	}
 
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
-
+		
+		for (int i = 0; i < tabell.length; i++) {
+			if(tabell[i] == tall) {
+				System.out.println(i);
+				return i;
+			}
+		}
+		System.out.println("-1");
+		return -1;
+		
+		
 //		// TODO
 //		throw new UnsupportedOperationException("posisjonTall ikke implementert");
 
@@ -93,7 +122,7 @@ public class Tabeller {
 		
 	}
 	for(int i: revers) {
-		System.out.print(i+" ");
+		System.out.println(i+" ");
 	}
 		return revers;
 		
@@ -105,6 +134,7 @@ public class Tabeller {
 
 	// g)
 	public static boolean erSortert(int[] tabell) {
+		return false;
 
 //		// TODO
 //		throw new UnsupportedOperationException("erSortert ikke implementert");
@@ -112,7 +142,29 @@ public class Tabeller {
 
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
+		
+		int lengde = tabell1.length + tabell2.length;
+		
+		int[] nyTab = new int[lengde];
+		int pos = 0;
+		
+		for (int i : tabell1) {
+			nyTab[pos] = i;
+			pos++;
+		}
+		
+		for (int i : tabell2) {
+			nyTab[pos] = i;
+			pos++;
+		}
+		
+		for (int i = 0; i<nyTab.length; i++) {
+			System.out.print(nyTab[i] + " ");
+		}
 
+		return nyTab;
+
+		
 //		// TODO
 //		throw new UnsupportedOperationException("settSammen ikke implementert");
 	}
