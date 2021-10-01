@@ -11,9 +11,20 @@ public class Matriser {
 
 	// b)
 	public static String tilStreng(int[][] matrise) {
+		
+		String start = "";
+		
+		for (int i = 0; i < matrise.length; i++) {
+			for (int j = 0; j < matrise[i].length; j++) {
+				start += matrise[i][j] + " ";
+			}
+			start += "\n";
+		}
+		System.out.println(start);
+		return start;
 
 		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
+		//throw new UnsupportedOperationException("tilStreng ikke implementert");
 		
 	}
 
@@ -34,9 +45,24 @@ public class Matriser {
 	
 	// e)
 	public static int[][] speile(int[][] matrise) {
+		
+		int[][] nyMatrise = new int[matrise.length][matrise[0].length];
+		String temp = "";
+		
+		for (int i = 0; i < matrise.length; i++) {
+			for (int j = 0; j < matrise[i].length; j++) {
+				nyMatrise[i][j] = matrise[j][i];
+				temp += nyMatrise[i][j] + " ";
+			}
+			temp += "\n";
+		}
+		System.out.println(temp);
+		return nyMatrise;
+		
+		
 
 		// TODO
-		throw new UnsupportedOperationException("speile ikke implementert");
+		//throw new UnsupportedOperationException("speile ikke implementert");
 	
 	}
 
