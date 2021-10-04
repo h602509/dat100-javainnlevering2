@@ -2,6 +2,17 @@ package no.hvl.dat100.lab6.matriser;
 
 public class Matriser {
 
+	public static void main(String[] args) {
+	
+	int [][] mat1 = { {1,2,3}, {4,5,6}, {7,8,9} };
+	int [][] mat2 = { {10,11,12}, {13,14,15}, {16,17,18} };
+	
+
+	}
+	
+	
+	
+	
 	// a)
 	public static void skrivUt(int[][] matrise) {
 		
@@ -43,7 +54,7 @@ public class Matriser {
 		throw new UnsupportedOperationException("erLik ikke implementert");
 	}
 	
-	// e)
+//	 e)
 	public static int[][] speile(int[][] matrise) {
 		
 		int[][] nyMatrise = new int[matrise.length][matrise[0].length];

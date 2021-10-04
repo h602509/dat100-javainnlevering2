@@ -12,22 +12,22 @@ public class Tabeller {
 		int[] tab2 = { 4, 5, 6 };
 
 //	a)
-//		skrivUt(heltall);
+		skrivUt(heltall);
 //	b)
-//		System.out.println(tilStreng(stringTekst));
+		System.out.println(tilStreng(stringTekst));
 //	c)	
-//		System.out.println("Summen av heltall er " + summer(heltall));
+		System.out.println("Summen av heltall er " + summer(heltall));
 //	d)
-//		System.out.println(finnesTall(tab1, 2));
+		System.out.println(finnesTall(tab1, 2));
 //	e)	
-//		System.out.println(posisjonTall(heltall, 10));
+		System.out.println(posisjonTall(heltall, 10));
 //	f) 	
-//		System.out.println(Arrays.toString(tab2) + Arrays.toString(reverser(tab2)));
+		System.out.println(Arrays.toString(tab2) + Arrays.toString(reverser(tab2)));
 //	g)
-//		System.out.println(erSortert(tab1));
+		System.out.println(erSortert(tab1));
 //	h)
-//		System.out.println(Arrays.toString(settSammen(tab1, tab2)));
-//		
+		System.out.println(Arrays.toString(settSammen(tab1, tab2)));
+		
 	}
 
 	// a)
